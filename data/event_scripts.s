@@ -1067,3 +1067,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route02/scripts.inc"
 
 	.include "data/maps/SalttrunkTown/scripts.inc"
+
+	.include "data/maps/PlayersHome_Second_Floor/scripts.inc"
+
+	.include "data/maps/PlayersHome_First_Floor/scripts.inc"

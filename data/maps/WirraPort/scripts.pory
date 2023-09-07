@@ -5,7 +5,7 @@ script GiveMon {
 	showmonpic(SPECIES_MUDKIP, 10, 3)
 	msgbox("Pick up mudkip?",MSGBOX_YESNO)
 	if (var(VAR_RESULT) == YES){
-		givemon(SPECIES_MUDKIP,5)
+		givemon(SPECIES_MUDKIP,15)
 		if (var(VAR_RESULT) == MON_GIVEN_TO_PARTY){
 			playfanfare(MUS_OBTAIN_ITEM)
 			msgbox("Recieved Mudkip!")
@@ -30,7 +30,7 @@ script GiveMon {
 		msgbox("damn fair ig")
 	}
 	waitmessage
-	trainerbattle_single(TRAINER_SHADOW_TEST, "battle me now scrublord", "imagine")
+	trainerbattle_single(TRAINER_ZANDER, "battle me now scrublord", "imagine")
 	msgbox("damn i lost to a noob like pando", MSGBOX_AUTOCLOSE)
 	releaseall
 	end

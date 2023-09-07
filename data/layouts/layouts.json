@@ -4450,6 +4450,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/SalttrunkTown/border.bin",
       "blockdata_filepath": "data/layouts/SalttrunkTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYERS_HOME_SECOND_FLOOR",
+      "name": "PlayersHome_Second_Floor_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PlayersHome_Second_Floor/border.bin",
+      "blockdata_filepath": "data/layouts/PlayersHome_Second_Floor/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYERS_HOME_FIRST_FLOOR",
+      "name": "PlayersHome_First_Floor_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/PlayersHome_First_Floor/border.bin",
+      "blockdata_filepath": "data/layouts/PlayersHome_First_Floor/map.bin"
     }
   ]
 }

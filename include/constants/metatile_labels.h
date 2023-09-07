@@ -250,6 +250,7 @@
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
 // gTileset_Haunted
+#define METATILE_Haunted_Door       0x0CA
 #define METATILE_Haunted_LongGrass  0x02F
 #define METATILE_Haunted_TallGrass  0x004
 

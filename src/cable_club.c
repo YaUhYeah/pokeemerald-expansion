@@ -95,7 +95,6 @@ static void CreateLinkupTask(u8 minPlayers, u8 maxPlayers)
 static void PrintNumPlayersInLink(u16 windowId, u32 numPlayers)
 {
     u8 xPos;
-
     ConvertIntToDecimalStringN(gStringVar1, numPlayers, STR_CONV_MODE_LEFT_ALIGN, 1);
     SetStandardWindowBorderStyle(windowId, FALSE);
     StringExpandPlaceholders(gStringVar4, gText_NumPlayerLink);

@@ -12,13 +12,13 @@ GiveMon::
 	msgbox GiveMon_Text_3
 GiveMon_1:
 	waitmessage
-	trainerbattle_single TRAINER_SHADOW_TEST, GiveMon_Text_4, GiveMon_Text_5
+	trainerbattle_single TRAINER_ZANDER, GiveMon_Text_4, GiveMon_Text_5
 	msgbox GiveMon_Text_6, MSGBOX_AUTOCLOSE
 	releaseall
 	end
 
 GiveMon_2:
-	givemon SPECIES_MUDKIP, 5
+	givemon SPECIES_MUDKIP, 15
 	compare VAR_RESULT, MON_GIVEN_TO_PARTY
 	goto_if_eq GiveMon_5
 	compare VAR_RESULT, MON_GIVEN_TO_PC

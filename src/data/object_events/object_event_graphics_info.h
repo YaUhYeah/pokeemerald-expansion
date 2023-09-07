@@ -4652,3 +4652,21 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh = {
     .images = sPicTable_HoOh,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NavySoldier = { 
+    .tileTag = 0xFFFF,
+    .paletteTag = OBJ_EVENT_PAL_NAVY_SOLDIER,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_2,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = gObjectEventPicTable_Navy_Soldier,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

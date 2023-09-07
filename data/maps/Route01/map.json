@@ -17,6 +17,11 @@
       "map": "MAP_SALTTRUNK_TOWN",
       "offset": 3,
       "direction": "left"
+    },
+    {
+      "map": "MAP_SLATEPORT_CITY",
+      "offset": 0,
+      "direction": "emerge"
     }
   ],
   "object_events": [
