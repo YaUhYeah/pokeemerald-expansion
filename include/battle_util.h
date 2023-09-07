@@ -136,12 +136,13 @@ u8 DoBattlerEndTurnEffects(void);
 bool8 HandleWishPerishSongOnTurnEnd(void);
 bool8 HandleFaintedMonActions(void);
 void TryClearRageAndFuryCutter(void);
+u8 AtkCanceller_UnableToUseMove(u32 moveType);
 void SetAtkCancellerForCalledMove(void);
-u8 AtkCanceller_UnableToUseMove(void);
 u8 AtkCanceller_UnableToUseMove2(void);
 bool8 HasNoMonsToSwitch(u8 battlerId, u8 r1, u8 r2);
 bool32 TryChangeBattleWeather(u8 battler, u32 weatherEnumId, bool32 viaAbility);
 u8 AbilityBattleEffects(u8 caseID, u8 battlerId, u16 ability, u8 special, u16 moveArg);
+bool32 TryPrimalReversion(u8 battlerId);
 bool32 IsNeutralizingGasOnField(void);
 u32 GetBattlerAbility(u8 battlerId);
 u32 IsAbilityOnSide(u32 battlerId, u32 ability);
@@ -188,7 +189,12 @@ void ClearIllusionMon(u32 battlerId);
 bool32 SetIllusionMon(struct Pokemon *mon, u32 battlerId);
 bool8 ShouldGetStatBadgeBoost(u16 flagId, u8 battlerId);
 u8 GetBattleMoveSplit(u32 moveId);
+<<<<<<< HEAD
 bool32 CanFling(u8 battlerId);
+=======
+bool32 TestMoveFlags(u16 move, u32 flag);
+bool32 CanFling(u32 battlerId);
+>>>>>>> c99b34fd89a979da3b41cb43c337c9428206868f
 bool32 IsTelekinesisBannedSpecies(u16 species);
 bool32 IsHealBlockPreventingMove(u32 battler, u32 move);
 bool32 HasEnoughHpToEatBerry(u32 battlerId, u32 hpFraction, u32 itemId);
@@ -208,6 +214,7 @@ void BufferStatChange(u8 battlerId, u8 statId, u8 stringId);
 bool32 BlocksPrankster(u16 move, u8 battlerPrankster, u8 battlerDef, bool32 checkTarget);
 u16 GetUsedHeldItem(u8 battler);
 bool32 IsBattlerWeatherAffected(u8 battlerId, u32 weatherFlags);
+u32 ApplyWeatherDamageMultiplier(u8 battlerAtk, u16 move, u8 moveType, u32 dmg, u16 holdEffectAtk, u16 holdEffectDef);
 u32 GetBattlerMoveTargetType(u8 battlerId, u16 move);
 bool32 CanTargetBattler(u8 battlerAtk, u8 battlerDef, u16 move);
 bool8 IsMoveAffectedByParentalBond(u16 move, u8 battlerId);
